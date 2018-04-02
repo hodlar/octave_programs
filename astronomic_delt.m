@@ -14,7 +14,7 @@ end
 dim1 = 0:1:NAXIS1;
 dim2 = 0:1:NAXIS2;
 
-X_vec = CRVAL1 + (x - CRPIX1) * CDELT1;
-Y_vec = CRVAL2 + (y - CRPIX2) * CDELT2;
+X_vec = x * CDELT1;
+Y_vec = y * CDELT2;
 
 endfunction
